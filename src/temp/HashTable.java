@@ -100,12 +100,14 @@ public class HashTable {
 	 * This method simply handles the printing for the chained nodes
 	 */
 	public void PrintNodes(Node node) {
-
 		while (node != null) {
-			System.out.print(node.getData() + " -> ");
+			System.out.print(node.getData());
 			node = node.getNext();
+			if (node != null) {
+				System.out.println(" -> ");
+			} // end if
 		} // end while
+
 		System.out.println();
 	}// end method
-
-}// end method
+}// end class
