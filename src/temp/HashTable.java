@@ -83,13 +83,14 @@ public class HashTable {
 	 */
 	public void ViewHashTable() {
 		System.out.println("\n");
+		System.out.println("Key	Value ");
 		for (int index = 0; index < table.length; index++) {
 			if (table[index] == null) {
 
-				System.out.println("Key: " + index + " Value: ");
+				System.out.println(index + "	");
 			} else {
 				Node node = table[index];
-				System.out.print("Key: " + index + " Value: ");
+				System.out.print(index + "	");
 				PrintNodes(node);
 			} // end method
 		} // end method
